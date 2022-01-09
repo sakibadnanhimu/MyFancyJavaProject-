@@ -4,7 +4,7 @@ public class Example
    public static void main(String args[])
    {
 	int counter, i=0, j=0, temp;
-	int number[] = new int[100];
+	int number1[] = new int[100];
 	Scanner scanner = new Scanner(System.in);
 	System.out.print("How many elements you want to enter: ");
 	counter = scanner.nextInt();
@@ -16,7 +16,7 @@ public class Example
 	for(i=0; i<counter; i++)
 	{
 	    System.out.print("Enter Array Element"+(i+1)+": ");
-	    number[i] = scanner.nextInt();
+	    number1[i] = scanner.nextInt();
 	}
 
 	/* Here we are writing the logic to swap first element with
@@ -31,9 +31,9 @@ public class Example
 	scanner.close();
 	while(i<j)
 	{
-  	   temp = number[i];
-	   number[i] = number[j];
-	   number[j] = temp;
+  	   temp = number1[i];
+	   number1[i] = number1[j];
+	   number1[j] = temp;
 	   i++;
 	   j--;
 	}
@@ -41,7 +41,7 @@ public class Example
 	System.out.print("Reversed array: ");
 	for(i=0; i<counter; i++)
 	{
-	   System.out.print(number[i]+ "  ");
+	   System.out.print(number1[i]+ "  ");
 	}       
    }
 }
